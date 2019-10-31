@@ -1,0 +1,50 @@
+﻿Build started 2019-10-28 18:50:10.
+     1>Project "E:\临时文件夹\IOCP\IOCP\IOCP.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt iocpbase.c option.c tcpsocket.c
+         tcpsocket.c
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(137): warning C4028: formal parameter 2 different from declaration
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(137): warning C4029: declared formal parameter list different from definition
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(313): warning C4047: 'function' : '__IOCHANNEL *' differs in levels of indirection from 'DWORD'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(313): warning C4024: 'pfnSignalProc' : different types for formal and actual parameter 2
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(313): warning C4047: 'function' : 'DWORD' differs in levels of indirection from 'void *'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(313): warning C4024: 'pfnSignalProc' : different types for formal and actual parameter 3
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(400): warning C4047: 'function' : 'SOCKET' differs in levels of indirection from 'HANDLE'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(400): warning C4024: 'function through pointer' : different types for formal and actual parameter 2
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(525): warning C4047: '!=' : 'int' differs in levels of indirection from 'HANDLE'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(564): warning C4047: 'function' : 'SOCKET' differs in levels of indirection from 'HANDLE'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(564): warning C4024: 'closesocket' : different types for formal and actual parameter 1
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(603): warning C4047: '<' : 'char *' differs in levels of indirection from 'unsigned int'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(603): warning C4047: ':' : 'char *' differs in levels of indirection from 'unsigned int'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(603): warning C4047: '=' : 'int' differs in levels of indirection from 'char *'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(709): warning C4047: 'function' : 'ULONG_PTR' differs in levels of indirection from 'HIOCPFILE'
+     1>e:\临时文件夹\iocp\iocp\tcpsocket.c(709): warning C4024: 'PostQueuedCompletionStatus' : different types for formal and actual parameter 3
+         option.c
+         iocpbase.c
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(106): warning C4244: '=' : conversion from 'time_t' to 'DWORD', possible loss of data
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(118): warning C4047: 'function' : 'HEAPELEMENT *' differs in levels of indirection from 'IOCHANNEL **'
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(118): warning C4024: 'bit_heap_top' : different types for formal and actual parameter 2
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(154): warning C4047: '=' : '__IOCHANNEL **' differs in levels of indirection from '__IOCHANNEL *'
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(174): warning C4133: '=' : incompatible types - from 'HIOEVENT' to 'IOCHANNEL *'
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(228): warning C4133: '=' : incompatible types - from 'PRIORITYLISTHEAD *' to 'PRIORITYLISTHEAD *'
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(232): warning C4133: '=' : incompatible types - from '__IOCPFILE *' to 'IOCHANNEL *'
+     1>e:\临时文件夹\iocp\iocp\iocpbase.c(234): warning C4047: '=' : '__IOCHANNEL **' differs in levels of indirection from '__IOCHANNEL *'
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\临时文件夹\IOCP\Debug\IOCP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\临时文件夹\IOCP\Debug\IOCP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\临时文件夹\IOCP\Debug\IOCP.lib" /MACHINE:X86 Debug\bitheap.obj
+         Debug\channel.obj
+         Debug\demo.obj
+         Debug\fileio.obj
+         Debug\iocpbase.obj
+         Debug\iocpdef.obj
+         Debug\option.obj
+         Debug\rbtree.obj
+         Debug\socketbuffer.obj
+         Debug\tcpsocket.obj
+         Debug\timer.obj
+         IOCP.vcxproj -> E:\临时文件夹\IOCP\Debug\IOCP.exe
+     1>Done Building Project "E:\临时文件夹\IOCP\IOCP\IOCP.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.40
